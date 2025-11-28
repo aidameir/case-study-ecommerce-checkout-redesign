@@ -74,10 +74,10 @@ All errors must follow standardized format:
 
 # 5. API Endpoints
 
-POST /api/checkout/start
-POST /api/checkout/submit
-POST /api/payment/applepay
-POST /api/payment/googlepay
+- POST /api/checkout/start
+- POST /api/checkout/submit
+- POST /api/payment/applepay
+- POST /api/payment/googlepay
 
 
 ---
