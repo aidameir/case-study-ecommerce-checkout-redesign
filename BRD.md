@@ -1,7 +1,7 @@
 # Business Requirements Document (BRD)
 ## Project: Checkout Redesign Initiative
 ## Version: 1.0
-## Author: Aida Meir — Lead BA
+## Author: Aida Meirbekova — Lead BA
 
 ---
 
@@ -52,7 +52,7 @@ This initiative directly supports the company’s **2025 revenue growth strategy
 | Role | Responsibility |
 |------|----------------|
 | Product Owner | Vision, scope approval |
-| BA Lead (Aida Meir) | Requirements, analysis, traceability |
+| BA Lead (Aida Meirbekova) | Requirements, analysis, traceability |
 | UX/UI | Wireframes, UI kit |
 | Architect | System design, integrations |
 | Developers | Front-end & backend |
