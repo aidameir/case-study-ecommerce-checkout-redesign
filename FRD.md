@@ -49,3 +49,51 @@ Taxes & shipping recalculate dynamically upon address update.
 ## 2.5 Error Handling
 ### FR-040
 All errors must follow standardized format:
+{ code: “ERR-###”, message: “User-friendly error” }
+
+---
+
+# 3. Non-Functional Requirements
+
+- Load time <2.5s  
+- 99.5% uptime  
+- PCI DSS compliance  
+- Must support 10k concurrent checkouts  
+
+---
+
+# 4. Data Model
+### Entities:
+- CheckoutSession  
+- UserProfile  
+- PaymentMethod  
+- Address  
+- Order  
+
+---
+
+# 5. API Endpoints
+
+POST /api/checkout/start
+POST /api/checkout/submit
+POST /api/payment/applepay
+POST /api/payment/googlepay
+
+
+---
+
+# 6. Sequence Diagrams
+(Description for draw.io)
+
+### “Payment Authorization Sequence”
+1. User submits form  
+2. Frontend → Payment Orchestrator  
+3. Orchestrator → Gateway  
+4. Gateway → Approval/Decline  
+5. Orchestrator → Order Service  
+6. Order Service → Frontend  
+
+---
+
+# 7. Acceptance Criteria
+See AcceptanceCriteria.md
